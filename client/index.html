@@ -2,20 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="./public/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GPT Chat App</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <div id="app">
+      <header id="header">
+        <div class="title">
+          Title
+        </div>
+        <div class=logo>
+          Logo
+        </div>
+      </header>
       <div id="chat-container"></div>
       <form>
         <textarea name="prompt" rows="1" cols="1" placeholder="Type your prompt...">
-          <button type="submit"><img src="./assets/send.svg"/></button>
-
         </textarea>
+        <button type="submit"><img src="./assets/send.svg"/></button>
       </form>
+
+      <div class='openai-c'>
+        <p class=''>Powered by</p>
+        <a href="https://openai.com/">
+          <img src='./assets/logo.svg' alt="logo" class=''/>
+        </a>
+  </div>
     </div>
     <script type="module" src="/script.js"></script>
   </body>
